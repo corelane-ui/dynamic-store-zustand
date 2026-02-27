@@ -1,0 +1,59 @@
+{
+  "name": "@corelane/dynamic-store-zustand",
+  "version": "0.1.0",
+  "description": "Dynamic store factory built on top of Zustand for scalable state management",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "zustand",
+    "store",
+    "dynamic-store",
+    "state-management",
+    "react",
+    "typescript"
+  ],
+  "author": "Corelane",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "zustand": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "react": "^18.3.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "zustand": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corelane/dynamic-store-zustand"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
