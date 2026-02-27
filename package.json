@@ -1,6 +1,6 @@
 {
   "name": "@corelane/dynamic-store-zustand",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Dynamic store factory built on top of Zustand for scalable state management",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -51,8 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/corelane/dynamic-store-zustand"
+    "url": "git+https://github.com/corelane/dynamic-store-zustand.git"
   },
+  "bugs": {
+    "url": "https://github.com/corelane/dynamic-store-zustand/issues"
+  },
+  "homepage": "https://github.com/corelane/dynamic-store-zustand#readme",
   "publishConfig": {
     "access": "public"
   }
